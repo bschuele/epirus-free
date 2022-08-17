@@ -13,9 +13,7 @@ services:
       - epirus
 
   mongodb:
-    image: mongo:latest
-    ports:
-      - 27017:27017
+    image: mongo:4.4
     entrypoint: mongod --logpath=/dev/null --bind_ip "0.0.0.0"
     networks:
       - epirus
